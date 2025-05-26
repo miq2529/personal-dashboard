@@ -1,10 +1,11 @@
+// components/Profile.js
 export default function Profile() {
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-2">Profile</h2>
-      <img src="/profile.jpg" alt="Mustaqeem" className="w-24 h-24 rounded-full" />
-      <p className="mt-4">Mustaqeem Qureshi, a motivated computer applications student passionate about web development and continuous learning.</p>
-      <p>Email: your.email@example.com</p>
-    </section>
-  )
+    <div className="bg-gradient-to-r from-blue-50 to-purple-100 p-6 rounded-xl shadow-md">
+      <h2 className="text-2xl font-semibold mb-2 text-gray-700">👤 Profile</h2>
+      <p className="text-gray-600">Name: Mustaqeem Qureshi</p>
+      <p className="text-gray-600">Location: Pune</p>
+      <p className="text-gray-600">Interests: Coding, Cricket, Travel</p>
+    </div>
+  );
 }
