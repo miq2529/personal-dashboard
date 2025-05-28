@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-blue-50 via-purple-100 to-pink-100 text-gray-800 font-sans;
+}
+
+.card {
+  @apply bg-white p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl duration-300;
+  animation: fadeIn 1s ease-out;
+}
+
+.navbar {
+  @apply flex justify-between items-center px-6 py-4 bg-white bg-opacity-80 backdrop-blur shadow;
+  animation: fadeIn 1s ease-out;
+}
+
+.footer {
+  @apply text-center text-sm text-gray-500 mt-8 py-4;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Example global styles */
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.container p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.container ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+

@@ -1,19 +1,27 @@
 // pages/index.js
-import Profile from '@/components/Profile'
-import Academics from '@/components/Academics'
-import Skills from '@/components/Skills'
-import Extras from '@/components/Extras'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-pink-100 p-6 font-sans">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8 space-y-8">
-        <h1 className="text-4xl font-bold text-center text-gray-800">🌟 Personal Dashboard</h1>
-        <Profile />
-        <Academics />
-        <Skills />
-        <Extras />
-      </div>
-    </div>
-  )
+export default function HomeRedirect() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/profile'); // Redirect to profile page
+  }, [router]);
+
+  return null;
 }
+
+
+const linkStyle = {
+  display: 'block',
+  marginBottom: '30px',
+  padding: '15px',
+  backgroundColor: '#f0f4f8',
+  borderRadius: '8px',
+  textDecoration: 'none',
+  color: '#333',
+  cursor: 'pointer',
+  maxWidth: '400px',
+  transition: 'background-color 0.3s ease',
+};
